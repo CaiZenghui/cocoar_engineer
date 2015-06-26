@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/vg_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/vg_title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#00b9ff"
+        android:paddingLeft="20dp" >
+
+        <TextView
+            android:id="@+id/tv_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="确认"
+            android:textColor="#ffffff"
+            android:textSize="17sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@id/tv_confirm" >
+
+            <ImageView
+                android:id="@+id/iv_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:padding="10dp"
+                android:src="@mipmap/icon_delete" />
+
+            <EditText
+                android:id="@+id/et_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/iv_delete"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="请输入地址"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="19sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/et_search"
+                android:layout_marginTop="2dp"
+                android:background="@color/white" >
+            </View>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/vg_title" >
+
+        <com.baidu.mapapi.map.MapView
+            android:id="@+id/map"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:clickable="true" />
+
+        <ImageView
+            android:id="@+id/iv_map_center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@mipmap/icon_map_center" />
+
+        <com.csd.android.widget.ZoomControlView
+            android:id="@+id/view_controller"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/iv_reset_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|left"
+            android:layout_marginBottom="45dp"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/icon_map_reset" />
+    </FrameLayout>
+
+</RelativeLayout>

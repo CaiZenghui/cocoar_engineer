@@ -1,0 +1,35 @@
+<resources>
+
+    <style name="AppTheme" parent="android:Theme">
+        <item name="android:windowTitleBackgroundStyle">@null</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/window_background</item>
+    </style>
+
+    <style name="AppTheme2" parent="AppTheme">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="CustomDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+    </style>
+
+    <style name="CustomProgressDialog" parent="@style/CustomDialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="CustomDialogTheme">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/cor_transprent_half</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:padding">0dip</item>
+    </style>
+
+</resources>

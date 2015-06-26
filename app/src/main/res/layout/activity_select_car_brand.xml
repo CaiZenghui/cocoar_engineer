@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="#00b9ff"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/iv_left_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="车型品牌"
+            android:textColor="#ffffff"
+            android:textSize="19sp" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/et_search_box"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/vg_bg_black_stroke_white_content"
+        android:gravity="center"
+        android:hint="搜索" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <com.csd.android.widget.SideBar
+            android:id="@+id/sidebar"
+            android:layout_width="25.0dip"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right|center" />
+
+        <ListView
+            android:id="@+id/lv"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_toLeftOf="@id/sidebar"
+            android:cacheColorHint="#00000000"
+            android:divider="@null"
+            android:dividerHeight="0px"
+            android:fadingEdgeLength="0dip"
+            android:listSelector="@null"
+            android:scrollbars="none" />
+
+        <TextView
+            android:id="@+id/tv_slidebar_tip"
+            android:layout_width="80.0dip"
+            android:layout_height="80.0dip"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:background="@mipmap/bg_siderbar_toast"
+            android:gravity="center"
+            android:textColor="#ffffffff"
+            android:textSize="25sp"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+</LinearLayout>

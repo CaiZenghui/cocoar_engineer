@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/vg_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/vg_bg_black_stroke_white_content" >
+
+    <RelativeLayout
+        android:id="@+id/vg1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+        <ImageView
+            android:id="@+id/iv_call_phone"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_call_phone_selector" />
+
+        <TextView
+            android:id="@+id/tv_phone_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/iv_call_phone"
+            android:text="12121212122"
+            android:textColor="#454545"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_nick_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/tv_phone_num"
+            android:text="杨先生"
+            android:textColor="#393939"
+            android:textSize="17sp" />
+
+        <View
+            android:id="@+id/view_read"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/red_circle" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/vg_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/vg1"
+        android:layout_marginRight="10dp" >
+
+        <TextView
+            android:id="@+id/tv_cards_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/bg_task_status_3"
+            android:text="证件审核"
+            android:textColor="#ffffff"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_car_info_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_cards_status"
+            android:layout_marginTop="3dp"
+            android:background="@mipmap/bg_task_status_3"
+            android:text="车辆信息"
+            android:textColor="#ffffff"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_box_bind_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_car_info_status"
+            android:layout_marginTop="3dp"
+            android:background="@mipmap/bg_task_status_3"
+            android:text="盒子绑定"
+            android:textColor="#ffffff"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/vg2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/vg1"
+        android:layout_marginBottom="6dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="6dp"
+        android:layout_toLeftOf="@id/vg_status" >
+
+        <TextView
+            android:id="@+id/tv_use_car_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="取车时间：2015-04-28 12:00"
+            android:textColor="#f7774a"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_car_install_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_use_car_time"
+            android:layout_marginTop="6dp"
+            android:text="安装时间：2015-04-28 12:00"
+            android:textColor="#585858"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_car_brand_task_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_car_install_time"
+            android:layout_marginTop="6dp"
+            android:text="车牌：沪A23450 安装中"
+            android:textColor="#585858"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_car_brand_task_status"
+            android:layout_marginTop="6dp"
+            android:text="地址：天山西路888弄78号协和路路口"
+            android:textColor="#585858"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/vg_task_emergency_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/vg2"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp" >
+
+        <TextView
+            android:id="@+id/tv_task_type_engineer_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="任务类型：新装    派单人：小黄"
+            android:textColor="#585858"
+            android:textSize="13sp" />
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/btn_blue_bg_round_corner_selector"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="5dp"
+            android:text="提交完成"
+            android:textColor="@color/white"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

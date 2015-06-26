@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="wrong">#FF7E0A</color>
+    <color name="line">#24292D</color>
+    <color name="bg">#cccccc</color>
+
+    <!-- fragment tabs定义的蓝色 -->
+
+    <color name="actionbar_bg">#ff2d2d2d</color>
+    <color name="actionbar_text">#ffffffff</color>
+    <color name="cocar_blue">#ff0DB9FF</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="actionbar_bg_transparent">#ee2d2d2d</color>
+    <color name="divider">#aaa</color>
+
+    <!-- ==================================================== -->
+    <!--  -->
+    <!-- ==================================================== -->
+    <color name="yellow">#FFBB33</color>
+
+    <!-- ====================version 1.4============================ -->
+    <color name="window_background">#efeff4</color>
+    <color name="login_text">#00b9ff</color>
+    <color name="cor_dbdbdb">#dbdbdb</color>
+    <color name="cor_light_gray">#f7f7f7</color>
+    <color name="cor_dark_gray">#ededed</color>
+    <color name="cor_list_divider">#c9c9c9</color>
+    <color name="cor_text_black">#585858</color>
+    <color name="cor_text_blue">#00b9ff</color>
+    <color name="cor_transprent_half">#80000000</color>
+
+</resources>

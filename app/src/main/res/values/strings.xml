@@ -1,0 +1,102 @@
+<resources>
+
+    <string name="app_name">信息采集工具</string>
+
+    <!-- 主页 -->
+    <string name="all_form">所有表单</string>
+
+    <!-- 登录 -->
+    <string name="login_title">COCAR信息采集工具</string>
+    <string name="user_name">用户名</string>
+    <string name="password">密码</string>
+    <string name="nonename">用户名不存在</string>
+    <string name="nonepassword">密码错误</string>
+    <string name="login">登录</string>
+    <!-- 表单 -->
+    <string name="sava">保存</string>
+    <string name="cancle">取消</string>
+    <string name="commit">提交</string>
+    <string name="edit">保存</string>
+    <!-- 车主信息 -->
+    <string name="ownerid">*身份证号码</string>
+    <string name="ownername">*车主姓名</string>
+    <string name="phonenumber">*手机号码</string>
+    <string name="address">*居住地址</string>
+    <string name="card">*身份证</string>
+    <string name="photo">照片</string>
+    <string name="find">查找</string>
+    <!-- 车辆信息 -->
+    <string name="driving_license">行驶证</string>
+    <string name="brand_number">*车牌号码</string>
+    <string name="cartype">*车辆类型</string>
+    <string name="everybody">所有人</string>
+    <string name="brand_model">品牌型号</string>
+    <string name="engine_number">发动机号码</string>
+    <string name="identification_number">车辆识别码</string>
+    <string name="registdata">*注册日期</string>
+    <string name="peopnumber">*核定载车人数</string>
+    <string name="validity">*检验有效期</string>
+    <string name="basic_info">基本信息</string>
+    <string name="transmission">*变速箱</string>
+    <string name="displacement">*排量</string>
+    <string name="mileage">*行驶里程</string>
+    <string name="km_fuel">*百公里耗油</string>
+    <string name="come_species">*加油种类</string>
+    <string name="additional_configuration">额外配置</string>
+    <string name="navigator">导航仪</string>
+    <string name="MP3">可外接MP3</string>
+    <string name="tachograph">行车记录仪</string>
+    <string name="child_seat">儿童座椅</string>
+    <string name="refrigerator">冰箱</string>
+    <string name="other">其它</string>
+    <string name="car">车辆</string>
+    <!-- 保险信息 -->
+    <string name="insurance_number">保险单号</string>
+    <string name="insured">*被保人</string>
+    <string name="insured_expiration_date">*有效期限</string>
+    <string name="insurer">保险人</string>
+    <string name="company_name">*公司名称</string>
+    <string name="service_calls">服务电话</string>
+    <string name="pay_high_insurance_policy">交强险保单</string>
+
+    <!-- 交易信息 -->
+    <string name="daily_rental_price">*日租价格</string>
+    <string name="price_over_three_days">*3日以上价格</string>
+    <string name="pdi_location">*交车地点</string>
+    <string name="pick_up_the_car_the_way">*取车方式</string>
+    <string name="delayed">*支持延迟1天还车</string>
+    <string name="not_rent_time">*不可租时间</string>
+    <string name="vehicle_description">车辆描述</string>
+    <!-- 搜索 -->
+    <string name="search">搜索</string>
+    <string name="yuan">元</string>
+    <!-- 不可租时间 -->
+    <string name="workday">工作日</string>
+    <string name="weekend">周末</string>
+    <string name="sun">日</string>
+    <string name="mon">一</string>
+    <string name="tue">二</string>
+    <string name="wed">三</string>
+    <string name="thu">四</string>
+    <string name="fri">五</string>
+    <string name="sat">六</string>
+    <string name="temporary">暂存</string>
+
+    <item name="tag_glide" type="id"></item>
+    <string name="net_unavailable">网络不可用</string>
+    <string name="net_fail">连接服务器失败</string>
+    <string name="task_install_des">当日安装中%1$s个；全部待安装%2$s个</string>
+    <string name="task_finish_des">本月已完成%1$s个；全部已完成%2$s个</string>
+    <string name="task_unfinish_des">本月未完成%1$s个；全部未完成%2$s个</string>
+    <string name="task_unsuccess_des">本月未成功%1$s个；全部未成功%2$s个</string>
+    <string name="task_success_des">本月已成功%1$s个；全部已成功%2$s个</string>
+    <string name="type_today">今日派单（%1$s）</string>
+    <string name="type_tomorrow">明日派单（%1$s）</string>
+    <string name="type_all">全部待安装（%1$s）</string>
+    <string name="type_finish">已完成（%1$s）</string>
+    <string name="type_unfinish">未完成（%1$s）</string>
+    <string name="type_unsuccess">未成功（%1$s）</string>
+    <string name="ok">确定</string>
+    <string name="scan_tips">将二维码图片对准扫描框即可自动扫描</string>
+
+</resources>

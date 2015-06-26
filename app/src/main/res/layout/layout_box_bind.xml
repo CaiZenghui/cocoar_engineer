@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/vg_cheLiangShangJiaView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="12dp" >
+
+        <include layout="@layout/item_bind_box" />
+
+        <LinearLayout
+            android:id="@+id/vg_item_box_bind"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp" >
+
+            <Button
+                android:id="@+id/btn_test_box"
+                android:layout_width="150dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/btn_blue_bg_round_corner_selector"
+                android:gravity="center"
+                android:text="智能盒测试"
+                android:textColor="@color/white"
+                android:textSize="19sp" />
+
+            <ImageView
+                android:id="@+id/iv_box_check_introduction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/btn_test_box"
+                android:src="@mipmap/icon_box_check_introduction" />
+
+            <TextView
+                android:id="@+id/tv_test_result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/iv_box_check_introduction"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textColor="@color/cor_text_blue"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <com.csd.android.widget.MapWrapper
+            android:id="@+id/map_wrapper"
+            android:layout_width="fill_parent"
+            android:layout_height="350dp"
+            android:layout_marginTop="10dp"
+            android:clickable="true" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp" >
+
+            <Button
+                android:id="@+id/btn_bind"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_blue_bg_round_corner_selector"
+                android:enabled="false"
+                android:gravity="center"
+                android:text="绑定"
+                android:textColor="@color/white"
+                android:textSize="19sp" />
+
+            <Button
+                android:id="@+id/btn_change"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="15dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_blue_bg_round_corner_selector"
+                android:gravity="center"
+                android:text="更换"
+                android:textColor="@color/white"
+                android:textSize="19sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

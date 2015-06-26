@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg_login"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="#33007faf"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="注意事项"
+            android:textColor="@color/cor_text_blue"
+            android:textSize="22sp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:layout_marginBottom="10dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1、电池开关必须要打开 (如果有开关，拨至 ON)；"
+                android:textColor="@color/cor_text_blue"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="2、盒子正面(有LOGO)必须朝向天空方向，上方不能有金属物覆盖；安装位置非驾驶舱内的，需注意防水；线路需用黑色胶带包裹；"
+                android:textColor="@color/cor_text_blue"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="3、COCAR1信号：GSM绿灯约2S闪一次即正常(2S灭，0.1S亮)；GPS蓝灯常亮表示定到位置（闪亮表示信号搜寻中）；电源红灯闪亮/常亮表示正常（充电中/充满电，不亮故障，慢闪电池电压低）；COCAR1一段时间后只留GSM信号灯亮，其它灯灭来省电；"
+                android:textColor="@color/cor_text_blue"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="4、运行状态要与当前钥匙门ACC状态一致；"
+                android:textColor="@color/cor_text_blue"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="5、注意智能盒编号正确、定位时间为当前时间；"
+                android:textColor="@color/cor_text_blue"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="6、未收到智能盒数据，可以尝试开关两次钥匙门、稍等一分钟再试。如果长时间未收到任何数据，可以更换智能盒设备；"
+                android:textColor="@color/cor_text_blue"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="7、COCAR2信号：GSM绿灯快闪初始化，慢闪/常亮表示正常，不亮无信号。GPS蓝灯 常亮表示定到位置(闪亮表示信号搜寻中)；电源红灯闪亮表示正常(常亮/不亮表示异常故障)。COCAR1一段时间后信号灯全灭来省电，可以通过旁边的信号灯开关来查看信号灯状态。"
+                android:textColor="@color/cor_text_blue"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

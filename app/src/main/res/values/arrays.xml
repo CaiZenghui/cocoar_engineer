@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="provinces">
+        <item>京</item>
+        <item>浙</item>
+        <item>津</item>
+        <item>皖</item>
+        <item>沪</item>
+        <item>闽</item>
+        <item>渝</item>
+        <item>赣</item>
+        <item>鲁</item>
+        <item>豫</item>
+        <item>蒙</item>
+        <item>鄂</item>
+        <item>新</item>
+        <item>湘</item>
+        <item>宁</item>
+        <item>粤</item>
+        <item>藏 </item>
+        <item>琼</item>
+        <item>桂</item>
+        <item>川</item>
+        <item>冀</item>
+        <item>贵</item>
+        <item>晋</item>
+        <item>云</item>
+        <item>辽</item>
+        <item>陕</item>
+        <item>吉</item>
+        <item>甘</item>
+        <item>黑</item>
+        <item>青</item>
+        <item>苏</item>
+    </string-array>
+    <string-array name="speed_box">
+        <item>手动档</item>
+        <item>自动档</item>
+    </string-array>
+    <string-array name="petrol_type">
+        <item>90号汽油</item>
+        <item>92号汽油</item>
+        <item>95号汽油</item>
+        <item>柴油</item>
+    </string-array>
+    <string-array name="vehicle_age">
+        <item>1年</item>
+        <item>2年</item>
+        <item>3年</item>
+        <item>4年</item>
+        <item>5年</item>
+        <item>6年</item>
+        <item>7年</item>
+        <item>8年</item>
+        <item>9年</item>
+        <item>10年</item>
+    </string-array>
+
+    <!-- 新增加车辆颜色 -->
+
+    <string-array name="vehicleColor">
+        <item>黑色</item>
+        <item>白色</item>
+        <item>金色</item>
+        <item>蓝色</item>
+        <item>银色</item>
+        <item>紫色</item>
+        <item>红色</item>
+        <item>黄色</item>
+        <item>绿色</item>
+        <item>棕色</item>
+    </string-array>
+
+    <!--  -->
+
+    <string-array name="insuranceCompanys">
+        <item>人保财险</item>
+        <item>太平洋保险</item>
+        <item>平安保险</item>
+        <item>大众保险</item>
+        <item>华泰保险</item>
+        <item>太平保险</item>
+        <item>中华联合保险</item>
+        <item>大地保险</item>
+        <item>华安保险</item>
+        <item>安信保险</item>
+        <item>安邦保险</item>
+        <item>天平保险</item>
+        <item>永诚保险</item>
+        <item>阳光保险</item>
+        <item>都邦保险</item>
+        <item>民安保险</item>
+        <item>国寿保险</item>
+        <item>中银保险</item>
+        <item>安诚保险</item>
+        <item>渤海保险</item>
+        <item>长安保险</item>
+        <item>国泰保险</item>
+        <item>天安保险</item>
+        <item>信达保险</item>
+        <item>英大泰和保险</item>
+        <item>紫金保险</item>
+        <item>鼎和保险</item>
+        <item>三星财产（中国）保险</item>
+        <item>浙商保险</item>
+        <item>东京海上保险</item>
+        <item>永安保险</item>
+        <item>众诚保险</item>
+        <item>三井住友海上保险</item>
+        <item>美亚财产保险</item>
+        <item>中意财产保险</item>
+        <item>上海市保险同业公会</item>
+        <item>其他</item>
+    </string-array>
+    <string-array name="insurancephones">
+        <item>95518</item>
+        <item>95500</item>
+        <item>95511</item>
+        <item>95507</item>
+        <item>4006095509</item>
+        <item>95529</item>
+        <item>95585</item>
+        <item>95590</item>
+        <item>95556</item>
+        <item>4008200081</item>
+        <item>95569</item>
+        <item>95550</item>
+        <item>95552</item>
+        <item>95510</item>
+        <item>4008895586</item>
+        <item>95506</item>
+        <item>4008695519</item>
+        <item>95566</item>
+        <item>4000500000</item>
+        <item>4006116666</item>
+        <item>95592</item>
+        <item>4008202288</item>
+        <item>95505</item>
+        <item>4008667788</item>
+        <item>4008195598</item>
+        <item>4008280018</item>
+        <item>4008888136</item>
+        <item>4009333000</item>
+        <item>4008666777</item>
+        <item>4008858008</item>
+        <item>95502</item>
+        <item>4008600600</item>
+        <item>4008832836</item>
+        <item>4008208858</item>
+        <item>4006002700</item>
+        <item>021-63155943</item>
+    </string-array>
+    <string-array name="carGasTypes">
+        <item>90#</item>
+        <item>92#</item>
+        <item>95#</item>
+        <item>柴油</item>
+    </string-array>
+    <string-array name="transmissions">
+        <item>手动</item>
+        <item>自动</item>
+    </string-array>
+    <string-array name="pailiang">
+        <item>L</item>
+        <item>T</item>
+    </string-array>
+    <string-array name="carCapacitys">
+        <item>5人</item>
+        <item>4人</item>
+        <item>2人</item>
+        <item>7人</item>
+        <item>7人以上</item>
+    </string-array>
+    <string-array name="carStyles">
+        <item>小型车</item>
+        <item>中型车</item>
+        <item>豪华车</item>
+        <item>SUV</item>
+        <item>MVP</item>
+        <item>跑车</item>
+    </string-array>
+
+    <!-- 在新版本中使用，当前还是使用老式的定义方法 -->
+    <string-array name="carStyles2">
+        <item>紧凑型轿车</item>
+        <item>经济型轿车</item>
+        <item>豪华型轿车</item>
+        <item>SUV</item>
+        <item>MVP</item>
+        <item>跑车</item>
+        <item>其他</item>
+    </string-array>
+    <string-array name="pickway">
+        <item>当面取车</item>
+        <item>自助取车</item>
+    </string-array>
+
+    <string-array name="box_position_int">
+        <item>10</item>
+        <item>11</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>29</item>
+        <item>30</item>
+        <item>31</item>
+        <item>32</item>
+        <item>33</item>
+        <item>34</item>
+        <item>35</item>
+        <item>36</item>
+        <item>37</item>
+        <item>39</item>
+    </string-array>
+    <string-array name="box_position_str">
+        <item>方向盘下方</item>
+        <item>OBD插口</item>
+        <item>其他</item>
+        <item>左后尾灯</item>
+        <item>右后尾灯</item>
+        <item>左前大灯</item>
+        <item>右前大灯</item>
+        <item>左前叶子板</item>
+        <item>右前叶子板</item>
+        <item>左后叶子板</item>
+        <item>右后叶子板</item>
+        <item>其他</item>
+        <item>左后尾灯</item>
+        <item>右后尾灯</item>
+        <item>左前大灯</item>
+        <item>右前大灯</item>
+        <item>左前叶子板</item>
+        <item>右前叶子板</item>
+        <item>左后叶子板</item>
+        <item>右后叶子板</item>
+        <item>其他</item>
+    </string-array>
+
+</resources>

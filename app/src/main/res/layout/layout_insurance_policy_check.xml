@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="10dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/vg_bg_dash_stroke_white_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_face_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="车辆交强险保单"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/tv_face_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="点击上传"
+                android:textSize="17sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_insurance"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:paddingBottom="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/icon_insurance" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:gravity="center"
+            android:text="保单信息抽取"
+            android:textSize="17sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/cor_list_divider" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="保险单号"
+                android:textColor="#393939"
+                android:textSize="17sp" />
+
+            <EditText
+                android:id="@+id/et_insurance_num"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="@null"
+                android:gravity="center"
+                android:hint="请输入"
+                android:textColor="#00b9ff"
+                android:textColorHint="@color/cor_text_blue"
+                android:textSize="17sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/cor_list_divider" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="被保人姓名"
+                android:textColor="#393939"
+                android:textSize="17sp" />
+
+            <EditText
+                android:id="@+id/et_insurance_name"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="@null"
+                android:gravity="center"
+                android:hint="请输入"
+                android:textColor="#00b9ff"
+                android:textColorHint="@color/cor_text_blue"
+                android:textSize="17sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/cor_list_divider" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="车辆识别号"
+                android:textColor="#393939"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/et_car_identify_num"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="@null"
+                android:gravity="center"
+                android:textColor="#00b9ff"
+                android:textSize="17sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/cor_list_divider" />
+
+        <RelativeLayout
+            android:id="@+id/vg_date_out_line"
+            android:layout_width="match_parent"
+            android:layout_height="45dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="有效期至"
+                android:textColor="#393939"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/tv_dead_line"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="@null"
+                android:gravity="center"
+                android:hint="请选择"
+                android:textColor="#00b9ff"
+                android:textColorHint="@color/cor_text_blue"
+                android:textSize="17sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/cor_list_divider" />
+
+        <RelativeLayout
+            android:id="@+id/vg_company_name"
+            android:layout_width="match_parent"
+            android:layout_height="45dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="公司名称"
+                android:textColor="#393939"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/tv_company_name"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:hint="请选择"
+                android:textColor="#00b9ff"
+                android:textColorHint="#00b9ff"
+                android:textSize="17sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/cor_list_divider" />
+
+        <EditText
+            android:id="@+id/et_other_company_name"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@null"
+            android:gravity="right|center_vertical"
+            android:hint="请输入保险公司名称"
+            android:textColor="#00b9ff"
+            android:textColorHint="#00b9ff"
+            android:textSize="17sp"
+            android:visibility="gone" />
+
+        <View
+            android:id="@+id/indicator_other_company_name"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/cor_list_divider"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="服务电话"
+                android:textColor="#393939"
+                android:textSize="17sp" />
+
+            <EditText
+                android:id="@+id/et_service_num"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="@null"
+                android:gravity="center"
+                android:hint="请输入"
+                android:textColor="#00b9ff"
+                android:textColorHint="#00b9ff"
+                android:textSize="17sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp" >
+
+        <RelativeLayout
+            android:id="@+id/vg_pass"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_green_bg_round_corner_selector"
+            android:clickable="true" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" >
+
+                <ImageView
+                    android:id="@+id/iv_success"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/icon_right" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="14dp"
+                    android:layout_toRightOf="@id/iv_success"
+                    android:gravity="center"
+                    android:text="通过"
+                    android:textColor="@color/white"
+                    android:textSize="19sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_blue_bg_round_corner_selector"
+            android:gravity="center"
+            android:text="保存"
+            android:textColor="@color/white"
+            android:textSize="19sp" />
+
+        <RelativeLayout
+            android:id="@+id/vg_reject"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_red_bg_round_corner_selector"
+            android:clickable="true" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" >
+
+                <ImageView
+                    android:id="@+id/iv_fail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/icon_wrong" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="14dp"
+                    android:layout_toRightOf="@id/iv_fail"
+                    android:gravity="center"
+                    android:text="不通过"
+                    android:textColor="@color/white"
+                    android:textSize="19sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_reject_reason"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:textColor="#ff0000"
+        android:textSize="19sp"
+        android:visibility="gone" />
+
+</LinearLayout>

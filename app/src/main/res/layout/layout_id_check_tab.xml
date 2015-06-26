@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="60dp"
+    android:background="#35ce7f">
+
+    <View
+        android:id="@+id/indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="2dp"
+        android:layout_alignLeft="@+id/vg"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/vg"
+        android:background="@color/yellow"
+        android:visibility="invisible" />
+
+    <RelativeLayout
+        android:id="@+id/vg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp" >
+
+        <TextView
+            android:id="@+id/tv_num"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/white_circle"
+            android:gravity="center"
+            android:text="1"
+            android:paddingBottom="7dp"
+            android:textColor="#ff0000"
+            android:textSize="28sp" />
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tv_num"
+            android:text="身份证"
+            android:textColor="#ffffff"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/tv_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_content"
+            android:layout_toRightOf="@id/tv_num"
+            android:text="未上传"
+            android:textColor="#ffffff"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Button xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/btn_1"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:layout_gravity="center"
+    android:layout_marginLeft="@dimen/common_padding"
+    android:layout_marginRight="@dimen/common_padding"
+    android:layout_marginTop="@dimen/common_padding"
+    android:background="@drawable/button_background"
+    android:text="拍照"
+    android:textColor="@color/cor_text_blue"
+    android:textSize="18sp" />

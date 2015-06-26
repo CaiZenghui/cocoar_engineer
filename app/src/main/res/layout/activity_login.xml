@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@mipmap/bg_login"
+    android:layout_height="match_parent" >
+    <include layout="@layout/layout_title" />
+
+    <RelativeLayout
+        android:id="@+id/vg_user_name"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"
+        android:layout_marginTop="161dp"
+        android:background="@drawable/login_bg_round_corner"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/tv_tip1"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="用户名"
+            android:textColor="#00b9ff"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/et_user_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#00b9ff"
+            android:layout_toRightOf="@id/tv_tip1"
+            android:background="@null" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/vg_user_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/vg_user_name"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/login_bg_round_corner"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/tv_tip2"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="#00b9ff"
+            android:text="密  码"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/et_user_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#00b9ff"
+            android:inputType="textPassword"
+            android:layout_toRightOf="@id/tv_tip2"
+            android:background="@null" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_input_error_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/vg_user_pwd"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp"
+        android:gravity="center"
+        android:visibility="gone"
+        android:text="用户名或密码错误，请重新输入"
+        android:textSize="13sp"
+        android:textColor="#ff5959" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/vg_user_pwd"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/btn_blue_bg_round_corner_selector"
+        android:text="登录"
+        android:textColor="#ffffffff"
+        android:textSize="20sp" />
+
+</RelativeLayout>
