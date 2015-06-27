@@ -111,6 +111,14 @@
             android:configChanges="keyboardHidden|orientation"
             android:screenOrientation="portrait"></activity>
         <activity
+            android:name=".activity.FrescoTestActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".activity.GlideTestActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"></activity>
+        <activity
             android:name="com.zbar.lib.CaptureActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait"

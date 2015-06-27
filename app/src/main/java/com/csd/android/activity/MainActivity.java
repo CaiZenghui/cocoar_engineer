@@ -12,7 +12,6 @@ import com.csd.android.UserManager;
 import com.csd.android.constants.SPConstants;
 import com.csd.android.utils.SPUtils;
 import com.csd.android.utils.ToastUtils;
-import com.csd.android.utils.UIUtils;
 import com.csd.android.widget.YCDialog;
 
 public class MainActivity extends Activity implements OnClickListener {
@@ -27,6 +26,15 @@ public class MainActivity extends Activity implements OnClickListener {
 	private void initView() {
 		findViewById(R.id.iv_task_install).setOnClickListener(this);
 		findViewById(R.id.iv_task_sale).setOnClickListener(this);
+		findViewById(R.id.iv_task_sale).setOnLongClickListener(new View.OnLongClickListener() {
+			@Override
+			public boolean onLongClick(View v) {
+				Intent intent =new Intent(MainActivity.this,GlideTestActivity.class);
+				startActivity(intent);
+				return false;
+			}
+		});
+
 		findViewById(R.id.iv_logout).setOnClickListener(this);
 		findViewById(R.id.iv_logout).setVisibility(View.VISIBLE);
 
@@ -44,9 +52,9 @@ public class MainActivity extends Activity implements OnClickListener {
 				break;
 
 			case R.id.iv_task_sale:
-				ToastUtils.showToast(UIUtils.getChannel());
-//				intent = new Intent(this, MapTestActivity.class);
-//				startActivity(intent);
+//				ToastUtils.showToast(UIUtils.getChannel());
+				intent = new Intent(this, FrescoTestActivity.class);
+				startActivity(intent);
 				break;
 
 			case R.id.iv_logout:
