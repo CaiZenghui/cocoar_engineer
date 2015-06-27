@@ -1,5 +1,6 @@
 package com.csd.android;
 
+import android.app.Activity;
 import android.app.AlarmManager;
 import android.app.Application;
 import android.app.PendingIntent;
@@ -12,6 +13,7 @@ import com.baidu.location.BDLocation;
 import com.baidu.location.BDLocationListener;
 import com.baidu.location.LocationClient;
 import com.baidu.location.LocationClientOption;
+import com.baidu.mapapi.map.BaiduMap;
 import com.csd.android.constants.SPConstants;
 import com.csd.android.net.CCHttpEngine;
 import com.csd.android.net.HttpCallBack;
@@ -19,6 +21,7 @@ import com.csd.android.net.NetConstants;
 import com.csd.android.net.ResponseBean;
 import com.csd.android.utils.LogUtils;
 import com.csd.android.utils.SPUtils;
+import com.squareup.leakcanary.LeakCanary;
 
 import java.io.IOException;
 import java.util.HashMap;
@@ -38,6 +41,7 @@ public class CCApplication extends Application {
 	@Override
 	public void onCreate() {
 		super.onCreate();
+		LeakCanary.install(this);
 		application = this;
 		
 		LocationBroadcastReceiver locationBroadcastReceiver = new LocationBroadcastReceiver();
